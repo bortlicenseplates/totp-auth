@@ -11,10 +11,9 @@ requires:
 """
 
 from argparse import ArgumentParser
-import keyring, pyperclip
+import keyring, pyperclip, re
 import onetimepass as otp
 import subprocess as sp
-import re
 
 # Use try clause to make a prompt fucntion that works with either python 2 or 3
 try: prompt = raw_input
